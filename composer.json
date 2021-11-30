@@ -1,0 +1,10 @@
+{
+    "require": {
+        "rubix/ml": "^0.4.1",
+        "sastrawi/sastrawi": "~1",
+        "web64/php-nlp-client": "^0.40.5",
+        "rubix/tensor": "^2.2",
+	"numphp/numphp": "*",
+	"markrogoyski/math-php": "2.*"
+    }
+}

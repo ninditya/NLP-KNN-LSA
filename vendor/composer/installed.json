@@ -1,0 +1,1384 @@
+[
+    {
+        "name": "amphp/amp",
+        "version": "v2.5.2",
+        "version_normalized": "2.5.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/amphp/amp.git",
+            "reference": "efca2b32a7580087adb8aabbff6be1dc1bb924a9"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/amphp/amp/zipball/efca2b32a7580087adb8aabbff6be1dc1bb924a9",
+            "reference": "efca2b32a7580087adb8aabbff6be1dc1bb924a9",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=7"
+        },
+        "require-dev": {
+            "amphp/php-cs-fixer-config": "dev-master",
+            "amphp/phpunit-util": "^1",
+            "ext-json": "*",
+            "jetbrains/phpstorm-stubs": "^2019.3",
+            "phpunit/phpunit": "^6.0.9 | ^7",
+            "psalm/phar": "^3.11@dev",
+            "react/promise": "^2"
+        },
+        "time": "2021-01-10T17:06:37+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Amp\\": "lib"
+            },
+            "files": [
+                "lib/functions.php",
+                "lib/Internal/functions.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Daniel Lowrey",
+                "email": "rdlowrey@php.net"
+            },
+            {
+                "name": "Aaron Piotrowski",
+                "email": "aaron@trowski.com"
+            },
+            {
+                "name": "Bob Weinand",
+                "email": "bobwei9@hotmail.com"
+            },
+            {
+                "name": "Niklas Keller",
+                "email": "me@kelunik.com"
+            }
+        ],
+        "description": "A non-blocking concurrency framework for PHP applications.",
+        "homepage": "http://amphp.org/amp",
+        "keywords": [
+            "async",
+            "asynchronous",
+            "awaitable",
+            "concurrency",
+            "event",
+            "event-loop",
+            "future",
+            "non-blocking",
+            "promise"
+        ],
+        "funding": [
+            {
+                "url": "https://github.com/amphp",
+                "type": "github"
+            }
+        ]
+    },
+    {
+        "name": "amphp/byte-stream",
+        "version": "v1.8.1",
+        "version_normalized": "1.8.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/amphp/byte-stream.git",
+            "reference": "acbd8002b3536485c997c4e019206b3f10ca15bd"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/amphp/byte-stream/zipball/acbd8002b3536485c997c4e019206b3f10ca15bd",
+            "reference": "acbd8002b3536485c997c4e019206b3f10ca15bd",
+            "shasum": ""
+        },
+        "require": {
+            "amphp/amp": "^2",
+            "php": ">=7.1"
+        },
+        "require-dev": {
+            "amphp/php-cs-fixer-config": "dev-master",
+            "amphp/phpunit-util": "^1.4",
+            "friendsofphp/php-cs-fixer": "^2.3",
+            "jetbrains/phpstorm-stubs": "^2019.3",
+            "phpunit/phpunit": "^6 || ^7 || ^8",
+            "psalm/phar": "^3.11.4"
+        },
+        "time": "2021-03-30T17:13:30+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Amp\\ByteStream\\": "lib"
+            },
+            "files": [
+                "lib/functions.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Aaron Piotrowski",
+                "email": "aaron@trowski.com"
+            },
+            {
+                "name": "Niklas Keller",
+                "email": "me@kelunik.com"
+            }
+        ],
+        "description": "A stream abstraction to make working with non-blocking I/O simple.",
+        "homepage": "http://amphp.org/byte-stream",
+        "keywords": [
+            "amp",
+            "amphp",
+            "async",
+            "io",
+            "non-blocking",
+            "stream"
+        ],
+        "funding": [
+            {
+                "url": "https://github.com/amphp",
+                "type": "github"
+            }
+        ]
+    },
+    {
+        "name": "amphp/parallel",
+        "version": "v1.4.0",
+        "version_normalized": "1.4.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/amphp/parallel.git",
+            "reference": "2c1039bf7ca137eae4d954b14c09a7535d7d4e1c"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/amphp/parallel/zipball/2c1039bf7ca137eae4d954b14c09a7535d7d4e1c",
+            "reference": "2c1039bf7ca137eae4d954b14c09a7535d7d4e1c",
+            "shasum": ""
+        },
+        "require": {
+            "amphp/amp": "^2",
+            "amphp/byte-stream": "^1.6.1",
+            "amphp/parser": "^1",
+            "amphp/process": "^1",
+            "amphp/serialization": "^1",
+            "amphp/sync": "^1.0.1",
+            "php": ">=7.1"
+        },
+        "require-dev": {
+            "amphp/php-cs-fixer-config": "dev-master",
+            "amphp/phpunit-util": "^1.1",
+            "phpunit/phpunit": "^8 || ^7"
+        },
+        "time": "2020-04-27T15:12:37+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Amp\\Parallel\\": "lib"
+            },
+            "files": [
+                "lib/Context/functions.php",
+                "lib/Sync/functions.php",
+                "lib/Worker/functions.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Aaron Piotrowski",
+                "email": "aaron@trowski.com"
+            },
+            {
+                "name": "Stephen Coakley",
+                "email": "me@stephencoakley.com"
+            }
+        ],
+        "description": "Parallel processing component for Amp.",
+        "homepage": "https://github.com/amphp/parallel",
+        "keywords": [
+            "async",
+            "asynchronous",
+            "concurrent",
+            "multi-processing",
+            "multi-threading"
+        ]
+    },
+    {
+        "name": "amphp/parser",
+        "version": "v1.0.0",
+        "version_normalized": "1.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/amphp/parser.git",
+            "reference": "f83e68f03d5b8e8e0365b8792985a7f341c57ae1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/amphp/parser/zipball/f83e68f03d5b8e8e0365b8792985a7f341c57ae1",
+            "reference": "f83e68f03d5b8e8e0365b8792985a7f341c57ae1",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=7"
+        },
+        "require-dev": {
+            "friendsofphp/php-cs-fixer": "^2.3",
+            "phpunit/phpunit": "^6"
+        },
+        "time": "2017-06-06T05:29:10+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Amp\\Parser\\": "lib"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Niklas Keller",
+                "email": "me@kelunik.com"
+            },
+            {
+                "name": "Aaron Piotrowski",
+                "email": "aaron@trowski.com"
+            }
+        ],
+        "description": "A generator parser to make streaming parsers simple.",
+        "homepage": "https://github.com/amphp/parser",
+        "keywords": [
+            "async",
+            "non-blocking",
+            "parser",
+            "stream"
+        ]
+    },
+    {
+        "name": "amphp/process",
+        "version": "v1.1.1",
+        "version_normalized": "1.1.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/amphp/process.git",
+            "reference": "b88c6aef75c0b22f6f021141dd2d5e7c5db4c124"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/amphp/process/zipball/b88c6aef75c0b22f6f021141dd2d5e7c5db4c124",
+            "reference": "b88c6aef75c0b22f6f021141dd2d5e7c5db4c124",
+            "shasum": ""
+        },
+        "require": {
+            "amphp/amp": "^2",
+            "amphp/byte-stream": "^1.4",
+            "php": ">=7"
+        },
+        "require-dev": {
+            "amphp/php-cs-fixer-config": "dev-master",
+            "amphp/phpunit-util": "^1",
+            "phpunit/phpunit": "^6"
+        },
+        "time": "2021-03-30T20:04:22+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Amp\\Process\\": "lib"
+            },
+            "files": [
+                "lib/functions.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Bob Weinand",
+                "email": "bobwei9@hotmail.com"
+            },
+            {
+                "name": "Aaron Piotrowski",
+                "email": "aaron@trowski.com"
+            },
+            {
+                "name": "Niklas Keller",
+                "email": "me@kelunik.com"
+            }
+        ],
+        "description": "Asynchronous process manager.",
+        "homepage": "https://github.com/amphp/process",
+        "funding": [
+            {
+                "url": "https://github.com/amphp",
+                "type": "github"
+            }
+        ]
+    },
+    {
+        "name": "amphp/serialization",
+        "version": "v1.0.0",
+        "version_normalized": "1.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/amphp/serialization.git",
+            "reference": "693e77b2fb0b266c3c7d622317f881de44ae94a1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/amphp/serialization/zipball/693e77b2fb0b266c3c7d622317f881de44ae94a1",
+            "reference": "693e77b2fb0b266c3c7d622317f881de44ae94a1",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=7.1"
+        },
+        "require-dev": {
+            "amphp/php-cs-fixer-config": "dev-master",
+            "phpunit/phpunit": "^9 || ^8 || ^7"
+        },
+        "time": "2020-03-25T21:39:07+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Amp\\Serialization\\": "src"
+            },
+            "files": [
+                "src/functions.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Aaron Piotrowski",
+                "email": "aaron@trowski.com"
+            },
+            {
+                "name": "Niklas Keller",
+                "email": "me@kelunik.com"
+            }
+        ],
+        "description": "Serialization tools for IPC and data storage in PHP.",
+        "homepage": "https://github.com/amphp/serialization",
+        "keywords": [
+            "async",
+            "asynchronous",
+            "serialization",
+            "serialize"
+        ]
+    },
+    {
+        "name": "amphp/sync",
+        "version": "v1.4.0",
+        "version_normalized": "1.4.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/amphp/sync.git",
+            "reference": "613047ac54c025aa800a9cde5b05c3add7327ed4"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/amphp/sync/zipball/613047ac54c025aa800a9cde5b05c3add7327ed4",
+            "reference": "613047ac54c025aa800a9cde5b05c3add7327ed4",
+            "shasum": ""
+        },
+        "require": {
+            "amphp/amp": "^2.2",
+            "php": ">=7.1"
+        },
+        "require-dev": {
+            "amphp/php-cs-fixer-config": "dev-master",
+            "amphp/phpunit-util": "^1.1",
+            "phpunit/phpunit": "^9 || ^8 || ^7"
+        },
+        "time": "2020-05-07T18:57:50+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Amp\\Sync\\": "src"
+            },
+            "files": [
+                "src/functions.php",
+                "src/ConcurrentIterator/functions.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Aaron Piotrowski",
+                "email": "aaron@trowski.com"
+            },
+            {
+                "name": "Stephen Coakley",
+                "email": "me@stephencoakley.com"
+            }
+        ],
+        "description": "Mutex, Semaphore, and other synchronization tools for Amp.",
+        "homepage": "https://github.com/amphp/sync",
+        "keywords": [
+            "async",
+            "asynchronous",
+            "mutex",
+            "semaphore",
+            "synchronization"
+        ]
+    },
+    {
+        "name": "league/flysystem",
+        "version": "2.0.8",
+        "version_normalized": "2.0.8.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/thephpleague/flysystem.git",
+            "reference": "82ad1e9a11745dba58775de2e8f47600b0a3331d"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/82ad1e9a11745dba58775de2e8f47600b0a3331d",
+            "reference": "82ad1e9a11745dba58775de2e8f47600b0a3331d",
+            "shasum": ""
+        },
+        "require": {
+            "ext-json": "*",
+            "league/mime-type-detection": "^1.0.0",
+            "php": "^7.2 || ^8.0"
+        },
+        "conflict": {
+            "guzzlehttp/ringphp": "<1.1.1"
+        },
+        "require-dev": {
+            "async-aws/s3": "^1.5",
+            "async-aws/simple-s3": "^1.0",
+            "aws/aws-sdk-php": "^3.132.4",
+            "composer/semver": "^3.0",
+            "ext-fileinfo": "*",
+            "friendsofphp/php-cs-fixer": "^2.16",
+            "google/cloud-storage": "^1.23",
+            "phpseclib/phpseclib": "^2.0",
+            "phpstan/phpstan": "^0.12.26",
+            "phpunit/phpunit": "^8.5 || ^9.4"
+        },
+        "time": "2021-05-15T19:53:59+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "League\\Flysystem\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Frank de Jonge",
+                "email": "info@frankdejonge.nl"
+            }
+        ],
+        "description": "File storage abstraction for PHP",
+        "keywords": [
+            "WebDAV",
+            "aws",
+            "cloud",
+            "file",
+            "files",
+            "filesystem",
+            "filesystems",
+            "ftp",
+            "s3",
+            "sftp",
+            "storage"
+        ],
+        "funding": [
+            {
+                "url": "https://offset.earth/frankdejonge",
+                "type": "custom"
+            },
+            {
+                "url": "https://github.com/frankdejonge",
+                "type": "github"
+            },
+            {
+                "url": "https://tidelift.com/funding/github/packagist/league/flysystem",
+                "type": "tidelift"
+            }
+        ]
+    },
+    {
+        "name": "league/mime-type-detection",
+        "version": "1.7.0",
+        "version_normalized": "1.7.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/thephpleague/mime-type-detection.git",
+            "reference": "3b9dff8aaf7323590c1d2e443db701eb1f9aa0d3"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/thephpleague/mime-type-detection/zipball/3b9dff8aaf7323590c1d2e443db701eb1f9aa0d3",
+            "reference": "3b9dff8aaf7323590c1d2e443db701eb1f9aa0d3",
+            "shasum": ""
+        },
+        "require": {
+            "ext-fileinfo": "*",
+            "php": "^7.2 || ^8.0"
+        },
+        "require-dev": {
+            "friendsofphp/php-cs-fixer": "^2.18",
+            "phpstan/phpstan": "^0.12.68",
+            "phpunit/phpunit": "^8.5.8 || ^9.3"
+        },
+        "time": "2021-01-18T20:58:21+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "League\\MimeTypeDetection\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Frank de Jonge",
+                "email": "info@frankdejonge.nl"
+            }
+        ],
+        "description": "Mime-type detection for Flysystem",
+        "funding": [
+            {
+                "url": "https://github.com/frankdejonge",
+                "type": "github"
+            },
+            {
+                "url": "https://tidelift.com/funding/github/packagist/league/flysystem",
+                "type": "tidelift"
+            }
+        ]
+    },
+    {
+        "name": "markrogoyski/math-php",
+        "version": "v2.0.0",
+        "version_normalized": "2.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/markrogoyski/math-php.git",
+            "reference": "4dab1f0efe96b547bd21b17b66a5b7efec5902b3"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/markrogoyski/math-php/zipball/4dab1f0efe96b547bd21b17b66a5b7efec5902b3",
+            "reference": "4dab1f0efe96b547bd21b17b66a5b7efec5902b3",
+            "shasum": ""
+        },
+        "require": {
+            "ext-json": "*",
+            "php": ">=7.2.0"
+        },
+        "require-dev": {
+            "php-coveralls/php-coveralls": "^2.0",
+            "php-parallel-lint/php-parallel-lint": "^1.2",
+            "phploc/phploc": "*",
+            "phpmd/phpmd": "^2.6",
+            "phpstan/phpstan": "*",
+            "phpunit/phpunit": "^8.5",
+            "squizlabs/php_codesniffer": "3.*"
+        },
+        "time": "2021-05-09T19:53:17+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "MathPHP\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Mark Rogoyski",
+                "email": "mark@rogoyski.com",
+                "homepage": "https://github.com/markrogoyski",
+                "role": "Lead developer"
+            },
+            {
+                "name": "Kevin Nowaczyk",
+                "homepage": "https://github.com/Beakerboy",
+                "role": "Developer"
+            },
+            {
+                "name": "MathPHP Community of Contributors",
+                "homepage": "https://github.com/markrogoyski/math-php/graphs/contributors"
+            }
+        ],
+        "description": "Math Library for PHP. Features descriptive statistics and regressions; Continuous and discrete probability distributions; Linear algebra with matrices and vectors, Numerical analysis; special mathematical functions; Algebra",
+        "homepage": "https://github.com/markrogoyski/math-php/",
+        "keywords": [
+            "algebra",
+            "combinatorics",
+            "distributions",
+            "linear algebra",
+            "math",
+            "mathematics",
+            "matrix",
+            "numerical analysis",
+            "probability",
+            "regressions",
+            "statistics"
+        ]
+    },
+    {
+        "name": "numphp/numphp",
+        "version": "v1.2.0",
+        "version_normalized": "1.2.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/NumPHP/NumPHP.git",
+            "reference": "cae62d83debee8b0f1e1c53e060c6688014dc0c8"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/NumPHP/NumPHP/zipball/cae62d83debee8b0f1e1c53e060c6688014dc0c8",
+            "reference": "cae62d83debee8b0f1e1c53e060c6688014dc0c8",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.4"
+        },
+        "require-dev": {
+            "phpmd/phpmd": "^2.7",
+            "phpunit/phpunit": "^5.7",
+            "satooshi/php-coveralls": "^2.1",
+            "sebastian/phpcpd": "^3.0",
+            "squizlabs/php_codesniffer": "^3.5"
+        },
+        "time": "2019-11-05T17:22:03+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "NumPHP\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Gordon Lesti",
+                "email": "info@gordonlesti.com",
+                "homepage": "http://gordonlesti.com/",
+                "role": "developer"
+            }
+        ],
+        "description": "Mathematical PHP library for scientific computing",
+        "homepage": "http://numphp.org/",
+        "keywords": [
+            "linalg",
+            "matrix",
+            "numeric"
+        ]
+    },
+    {
+        "name": "psr/log",
+        "version": "1.1.4",
+        "version_normalized": "1.1.4.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/php-fig/log.git",
+            "reference": "d49695b909c3b7628b6289db5479a1c204601f11"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/php-fig/log/zipball/d49695b909c3b7628b6289db5479a1c204601f11",
+            "reference": "d49695b909c3b7628b6289db5479a1c204601f11",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "time": "2021-05-03T11:20:27+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.1.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Psr\\Log\\": "Psr/Log/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "PHP-FIG",
+                "homepage": "https://www.php-fig.org/"
+            }
+        ],
+        "description": "Common interface for logging libraries",
+        "homepage": "https://github.com/php-fig/log",
+        "keywords": [
+            "log",
+            "psr",
+            "psr-3"
+        ]
+    },
+    {
+        "name": "rubix/ml",
+        "version": "0.4.1",
+        "version_normalized": "0.4.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/RubixML/ML.git",
+            "reference": "d34f8aedce1228a8c9eccc52075a06430e2de92b"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/RubixML/ML/zipball/d34f8aedce1228a8c9eccc52075a06430e2de92b",
+            "reference": "d34f8aedce1228a8c9eccc52075a06430e2de92b",
+            "shasum": ""
+        },
+        "require": {
+            "amphp/parallel": "^1.3",
+            "ext-json": "*",
+            "league/flysystem": "~2.0.2",
+            "php": ">=7.2",
+            "psr/log": "^1.1",
+            "rubix/tensor": "^2.2",
+            "symfony/polyfill-mbstring": "^1.0",
+            "symfony/polyfill-php73": "^1.20",
+            "symfony/polyfill-php80": "^1.17"
+        },
+        "require-dev": {
+            "friendsofphp/php-cs-fixer": "2.18.*",
+            "league/flysystem-memory": "^2.0",
+            "phpbench/phpbench": "1.0.0-alpha6",
+            "phpstan/extension-installer": "^1.0",
+            "phpstan/phpstan": "0.12.*",
+            "phpstan/phpstan-phpunit": "0.12.*",
+            "phpunit/phpunit": "8.5.*"
+        },
+        "suggest": {
+            "ext-gd": "For image manipulation",
+            "ext-igbinary": "For binary serialization of persistables",
+            "ext-mbstring": "For fast multibyte string manipulation",
+            "ext-redis": "To persist models to a Redis DB",
+            "ext-svm": "For Support Vector Machine engine (libsvm)",
+            "ext-tensor": "For fast Matrix/Vector computing",
+            "rubix/extras": "For experimental features"
+        },
+        "time": "2021-03-28T01:48:47+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Rubix\\ML\\": "src/"
+            },
+            "files": [
+                "src/constants.php",
+                "src/functions.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Andrew DalPino",
+                "homepage": "https://github.com/andrewdalpino",
+                "role": "Lead Engineer"
+            },
+            {
+                "name": "Contributors",
+                "homepage": "https://github.com/RubixML/ML/graphs/contributors"
+            }
+        ],
+        "description": "A high-level machine learning and deep learning library for the PHP language.",
+        "homepage": "https://rubixml.com",
+        "keywords": [
+            "Algorithm",
+            "Deep learning",
+            "Linear regression",
+            "Neural network",
+            "Rubix",
+            "TF-IDF",
+            "adaboost",
+            "ai",
+            "analytics",
+            "anomaly detection",
+            "artificial intelligence",
+            "cart",
+            "classification",
+            "classifier",
+            "clustering",
+            "cross validation",
+            "data mining",
+            "data science",
+            "dataset",
+            "dbscan",
+            "dimensionality reduction",
+            "ensemble",
+            "estimator",
+            "etl",
+            "feature extraction",
+            "feature importance",
+            "feature selection",
+            "gaussian mixture",
+            "gbm",
+            "gmm",
+            "gradient boost",
+            "grid search",
+            "image recognition",
+            "imputation",
+            "inference",
+            "isolation forest",
+            "k-means",
+            "k-nearest neighbors",
+            "kmeans",
+            "knn",
+            "local outlier factor",
+            "loda",
+            "lof",
+            "logistic regression",
+            "machine learning",
+            "manifold learning",
+            "mean shift",
+            "ml",
+            "mlp",
+            "multilayer perceptron",
+            "naive bayes",
+            "natural language processing",
+            "nearest neighbors",
+            "nlp",
+            "outlier detection",
+            "php",
+            "php ai",
+            "php machine learning",
+            "php ml",
+            "prediction",
+            "predictive modeling",
+            "random forest",
+            "ranking",
+            "recommendation",
+            "regression",
+            "regressor",
+            "ridge",
+            "rubix ml",
+            "rubixml",
+            "softmax",
+            "supervised learning",
+            "support vector machine",
+            "svm",
+            "t-sne",
+            "text mining",
+            "tf idf",
+            "tsne",
+            "unsupervised learning"
+        ],
+        "funding": [
+            {
+                "url": "https://github.com/sponsors/RubixML",
+                "type": "github"
+            }
+        ]
+    },
+    {
+        "name": "rubix/tensor",
+        "version": "2.2.3",
+        "version_normalized": "2.2.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/RubixML/Tensor.git",
+            "reference": "35f8b1421fe7c5b2ce9b52e41da5cc457ea270af"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/RubixML/Tensor/zipball/35f8b1421fe7c5b2ce9b52e41da5cc457ea270af",
+            "reference": "35f8b1421fe7c5b2ce9b52e41da5cc457ea270af",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=7.2"
+        },
+        "require-dev": {
+            "friendsofphp/php-cs-fixer": "2.18.*",
+            "phalcon/zephir": "^0.12.20",
+            "phpbench/phpbench": "0.16.*",
+            "phpstan/extension-installer": "^1.0",
+            "phpstan/phpstan": "0.12.*",
+            "phpstan/phpstan-phpunit": "0.12.*",
+            "phpunit/phpunit": "8.5.*"
+        },
+        "time": "2021-05-25T05:36:16+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Tensor\\": "src/",
+                "JAMA\\": "lib/JAMA",
+                "Zephir\\Optimizers\\FunctionCall\\": "optimizers/"
+            },
+            "files": [
+                "src/constants.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Andrew DalPino",
+                "email": "support@andrewdalpino.com",
+                "homepage": "https://github.com/andrewdalpino",
+                "role": "Project Lead"
+            },
+            {
+                "name": "Contributors",
+                "homepage": "https://github.com/RubixML/Tensor/graphs/contributors"
+            }
+        ],
+        "description": "A library and extension that provides objects for scientific computing in PHP.",
+        "homepage": "https://github.com/RubixML/Tensor",
+        "keywords": [
+            "1d convolution",
+            "2d convolution",
+            "arithmetic",
+            "blas",
+            "computation",
+            "computing",
+            "convolution",
+            "decomposition",
+            "dot product",
+            "eigendecomposition",
+            "eigenvalue",
+            "eigenvector",
+            "engineering",
+            "extension",
+            "lapack",
+            "linear algebra",
+            "math",
+            "matmul",
+            "matrix",
+            "matrix multiplication",
+            "multithreaded",
+            "php",
+            "php extension",
+            "pseudoinverse",
+            "scientific computing",
+            "signal processing",
+            "singular value decomposition",
+            "statistics",
+            "svd",
+            "tensor",
+            "trigonometry",
+            "vector",
+            "vector norm"
+        ],
+        "funding": [
+            {
+                "url": "https://github.com/RubixML",
+                "type": "github"
+            },
+            {
+                "url": "https://github.com/andrewdalpino",
+                "type": "github"
+            }
+        ]
+    },
+    {
+        "name": "sastrawi/sastrawi",
+        "version": "v1.2.0",
+        "version_normalized": "1.2.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/sastrawi/sastrawi.git",
+            "reference": "31fd4261dd4980cc57447f44d1aec4bd69e2abec"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/sastrawi/sastrawi/zipball/31fd4261dd4980cc57447f44d1aec4bd69e2abec",
+            "reference": "31fd4261dd4980cc57447f44d1aec4bd69e2abec",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "4.8.7",
+            "squizlabs/php_codesniffer": "~1.0"
+        },
+        "time": "2016-10-22T03:19:27+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.1.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Sastrawi\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Andy Librian",
+                "email": "andylibrian@gmail.com",
+                "homepage": "http://andylibrian.com",
+                "role": "Lead Developer"
+            }
+        ],
+        "description": "PHP library for stemming Indonesian language (Bahasa Indonesia)",
+        "homepage": "https://github.com/sastrawi/sastrawi",
+        "keywords": [
+            "bahasa",
+            "indonesia",
+            "indonesian",
+            "kata dasar",
+            "root word",
+            "stem"
+        ],
+        "support": {
+            "issues": "https://github.com/sastrawi/sastrawi/issues",
+            "source": "https://github.com/sastrawi/sastrawi"
+        }
+    },
+    {
+        "name": "symfony/polyfill-mbstring",
+        "version": "v1.23.0",
+        "version_normalized": "1.23.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/polyfill-mbstring.git",
+            "reference": "2df51500adbaebdc4c38dea4c89a2e131c45c8a1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/2df51500adbaebdc4c38dea4c89a2e131c45c8a1",
+            "reference": "2df51500adbaebdc4c38dea4c89a2e131c45c8a1",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=7.1"
+        },
+        "suggest": {
+            "ext-mbstring": "For best performance"
+        },
+        "time": "2021-05-27T09:27:20+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-main": "1.23-dev"
+            },
+            "thanks": {
+                "name": "symfony/polyfill",
+                "url": "https://github.com/symfony/polyfill"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Polyfill\\Mbstring\\": ""
+            },
+            "files": [
+                "bootstrap.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Nicolas Grekas",
+                "email": "p@tchwork.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony polyfill for the Mbstring extension",
+        "homepage": "https://symfony.com",
+        "keywords": [
+            "compatibility",
+            "mbstring",
+            "polyfill",
+            "portable",
+            "shim"
+        ],
+        "funding": [
+            {
+                "url": "https://symfony.com/sponsor",
+                "type": "custom"
+            },
+            {
+                "url": "https://github.com/fabpot",
+                "type": "github"
+            },
+            {
+                "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                "type": "tidelift"
+            }
+        ]
+    },
+    {
+        "name": "symfony/polyfill-php73",
+        "version": "v1.23.0",
+        "version_normalized": "1.23.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/polyfill-php73.git",
+            "reference": "fba8933c384d6476ab14fb7b8526e5287ca7e010"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/polyfill-php73/zipball/fba8933c384d6476ab14fb7b8526e5287ca7e010",
+            "reference": "fba8933c384d6476ab14fb7b8526e5287ca7e010",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=7.1"
+        },
+        "time": "2021-02-19T12:13:01+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-main": "1.23-dev"
+            },
+            "thanks": {
+                "name": "symfony/polyfill",
+                "url": "https://github.com/symfony/polyfill"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Polyfill\\Php73\\": ""
+            },
+            "files": [
+                "bootstrap.php"
+            ],
+            "classmap": [
+                "Resources/stubs"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Nicolas Grekas",
+                "email": "p@tchwork.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony polyfill backporting some PHP 7.3+ features to lower PHP versions",
+        "homepage": "https://symfony.com",
+        "keywords": [
+            "compatibility",
+            "polyfill",
+            "portable",
+            "shim"
+        ],
+        "funding": [
+            {
+                "url": "https://symfony.com/sponsor",
+                "type": "custom"
+            },
+            {
+                "url": "https://github.com/fabpot",
+                "type": "github"
+            },
+            {
+                "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                "type": "tidelift"
+            }
+        ]
+    },
+    {
+        "name": "symfony/polyfill-php80",
+        "version": "v1.23.0",
+        "version_normalized": "1.23.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/polyfill-php80.git",
+            "reference": "eca0bf41ed421bed1b57c4958bab16aa86b757d0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/eca0bf41ed421bed1b57c4958bab16aa86b757d0",
+            "reference": "eca0bf41ed421bed1b57c4958bab16aa86b757d0",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=7.1"
+        },
+        "time": "2021-02-19T12:13:01+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-main": "1.23-dev"
+            },
+            "thanks": {
+                "name": "symfony/polyfill",
+                "url": "https://github.com/symfony/polyfill"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Polyfill\\Php80\\": ""
+            },
+            "files": [
+                "bootstrap.php"
+            ],
+            "classmap": [
+                "Resources/stubs"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Ion Bazan",
+                "email": "ion.bazan@gmail.com"
+            },
+            {
+                "name": "Nicolas Grekas",
+                "email": "p@tchwork.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony polyfill backporting some PHP 8.0+ features to lower PHP versions",
+        "homepage": "https://symfony.com",
+        "keywords": [
+            "compatibility",
+            "polyfill",
+            "portable",
+            "shim"
+        ],
+        "funding": [
+            {
+                "url": "https://symfony.com/sponsor",
+                "type": "custom"
+            },
+            {
+                "url": "https://github.com/fabpot",
+                "type": "github"
+            },
+            {
+                "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                "type": "tidelift"
+            }
+        ]
+    },
+    {
+        "name": "web64/php-nlp-client",
+        "version": "v0.40.5",
+        "version_normalized": "0.40.5.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/web64/php-nlp-client.git",
+            "reference": "b34658717a3b09dd5dcbae842e3227086a3970ba"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/web64/php-nlp-client/zipball/b34658717a3b09dd5dcbae842e3227086a3970ba",
+            "reference": "b34658717a3b09dd5dcbae842e3227086a3970ba",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.6.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "7"
+        },
+        "time": "2020-08-20T09:58:50+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Web64\\Nlp\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Olav Hjertaker",
+                "email": "olav.hjertaker@gmail.com"
+            }
+        ],
+        "description": "Library for accessing NLP apis",
+        "keywords": [
+            "article extraction",
+            "entity extraction",
+            "language detection",
+            "natural language",
+            "nlp"
+        ]
+    }
+]

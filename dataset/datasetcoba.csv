@@ -1,0 +1,101 @@
+pertanyaan;jawaban;label
+AKPK adalah.;akpk;dosen dan staff
+Apa konsentrasi bidang bapak rahmad?;Bidang Keahlian Dosen;dosen dan staff
+Ada daftar Profil dosen?;Dosen;dosen dan staff
+Jabatan Bapak Awang Hendrianto Pratomo adalah.;jurusan;dosen dan staff
+bagan organisasi IF.;jurusan;dosen dan staff
+email bagian kemahasiswaan yang dapat dihubungi.;kontak AKPK;dosen dan staff
+Ada yang punya email pak awang ga?;kontak dosen;dosen dan staff
+ada yang punya kontak bu Andina perpustakaan Fakultas (FTI)? ;kontak pustakawan;dosen dan staff
+ada yang punya kontak bu Eni perpustakaan Pusat Kampus I? ;kontak pustakawan;dosen dan staff
+informasi kepala laborat.;laboratoriaum;dosen dan staff
+apa itu lppm?;lppm;dosen dan staff
+alamat media informasi lp2m.;lppm;dosen dan staff
+email aktif milik upt tik.;upt tik;dosen dan staff
+nomer yang bisa dihubungi milik upt tik upnvyk.;upt tik;dosen dan staff
+Gaes, ada yang tau ruang pak awang sekarang dimana ga ya?;alamat;fasilitas
+lokasi upt upnvyk?;alamat;fasilitas
+admin, cbis tidak dapat diakses, apa pin cbis sedang di reset?;cbis;fasilitas
+apa yang harus saya lakukan ketika saya lupa password cbis?;cbis;fasilitas
+apa kegunaan mendapatkan email institusi?;email;fasilitas
+Bagaimana Cara Reset Password Email Afiliasi Google ?;email;fasilitas
+Adakah peta kampus?;kampus pusat;fasilitas
+bagaimana bisa nomor saya tidak tercatat padahal sudah teregistrasi dengan ktp?;kuota;fasilitas
+apa yang menyebabkan saya tidak mendapatkan kuota belajar pemerintah?;kuota;fasilitas
+Apa ada fasilitas tes toefl?;LAPSA;fasilitas
+ada yang punya soal uts/uas tahun lalu?;materi if;fasilitas
+ada yang simpan catatan mata kuliah semester 2?;materi si;fasilitas
+jam kerja kampus pusat !;perpustakaan;fasilitas
+Perpus kampus II udah buka belum ya?;perpustakaan;fasilitas
+jawaban mu salah!;agen.false;Greeting
+balasan mu sesuai yang di harapkan.;agen.right;Greeting
+info-nya bermanfaat!;agen.right;Greeting
+aku ingin tahu lebih banyak tentang kamu!;agent.acquaintance;Greeting
+bicara tentang dirimu!;agent.acquaintance;Greeting
+akankah kamu bicara dengan saya?;agent.talktome;Greeting
+ bisa mengobrol dengan saya?;agent.talktome;Greeting
+apakah kamu selalu aktif?;aktif;Greeting
+Apakah chatbot aktif?;aktif;Greeting
+bagus!;appriciate;Greeting
+hebat.;appriciate;Greeting
+assalamu alaikum wr wb.;assalamualaikum;Greeting
+apa kamu punya waktu luang?;busy;Greeting
+bye saya mau off.;bye;Greeting
+Agenda Sarasehan IF.; Sarasehan IF.;jadwal
+Agenda Sarasehan SI.; Sarasehan SI.;jadwal
+ada yang berhasil bayar ukt hari ini?;bayar ukt;jadwal
+agenda permohonan izin Cuti akademik?;cuti dan pemulihan;jadwal
+Agenda Pendaftaran KP Kapan?;daftar kp;jadwal
+Hasil Seleksi LF kapan diumumkan?;daftar lf;jadwal
+kapan jadwal untuk pendaftaran wisuda bulan januari?;daftar wisuda;jadwal
+batas akhir harus putus studi?;eval putus studi;jadwal
+adakah jadwal kegiatan akademik tahun ajaran ini lengkap?;kalender akademik;jadwal
+jadwal kegiatan kkn?;kkn;jadwal
+Input KRP kapan ya?;krsan;jadwal
+agenda tatap muka hari pertama praktikum?;mulai perkuliahan;jadwal
+agenda pelaksanaan ujian tgl berapa ya?;pelaksanaan ujian;jadwal
+ada batas waktu pengajuan sidang ta2 semester ini?;pendaftaran sidang;jadwal
+adakah buku panduan penulisan proposal maupun laporan kuliah kerja nyata?;KKN;kegiatan
+Dimana kita bisa cek informasi kkn ?;KKN;kegiatan
+apa saja dokumen yang keperluan persyaratan KP ?;KP;kegiatan
+Apakah ada rekaman sosialisasi kerja praktik tadi saya ada yang ketinggalan.;KP;kegiatan
+Jika saya mengambil Learning Factory 20 sks apakah di semester depan yang tidak ada di learning factory akan dimundurkan semester depannya lagi contohnya metode penelitian?;LF;kegiatan
+apa saja kriteria yang dianjurkan untuk mengikuti program MBKM?;MBKM;kegiatan
+bagaimana prosedur penilaian program kegiatan MBKM?;MBKM;kegiatan
+ Apa itu pembimbing lapangan ?;pembimbing lapangan;kegiatan
+alamat google form Factory/LF!;pendaftaran KP;kegiatan
+Ada grup praktikum?;praktikum;kegiatan
+Apaan sih KP/Kerja praktik/Magang itu ?;sosialisasi kp;kegiatan
+Acara Sosialisasi Akselerasi Tugas Akhir (TA) yang di zoom itu di-upload ke youtube ga ya ?;sosialisasi ta;kegiatan
+apa saja alasan minta pergantian dosbing bisa tidak ?;tugas akhir;kegiatan
+bagian yang ada di proposal!;tugas akhir;kegiatan
+berkas yang disiapkan buat legalisir Ijazah?;legalisir;Layanan
+adakah halaman website untuk mendapatkan blangko untuk permohonan pemulihan status mahasiswa setelah cuti?;status kuliah;Layanan
+bagaimana alur untuk mengembalikan status mahasiswa?;status kuliah;Layanan
+Ada yang tau cara dapat transkrip online ga ya lur?;transkrip nilai;Layanan
+apa transkrip bisa di cetak sendiri sekarang?;transkrip.blangko;Layanan
+apa saja yang harus dipersiapkan untuk mendapatkan dispensasi pembayaran ukt?;ukt. Dispensasi;Layanan
+dimana saya bisa download formulir sanggah ukt?;ukt. Dispensasi.blangko;Layanan
+alur pengajuan yudisium?;yudisium;Layanan
+apakah form permohonan yudisium sudah ada?;yudisium;Layanan
+bagaimana proses membuat keterangan bebas lab ke tu laboratorium?;bebas lab;Layanan
+dimana saya bisa mendapatkan format penilaian jurnal publikasi?;form nilai naskah;Layanan
+apa saja yang harus dilaksanakan jika ingin menghapus salah satu mata pelajaran?;hapus mata kuliah;Layanan
+contoh berkas untuk hapus matakuliah!;hapus mka.blangko;Layanan
+bagi form izin magang?;ijin KP;Layanan
+alasan apa saja yang di izinkan untuk cuti akademik?;administrasi.cuti;peraturan
+adakah pembayaran selain ukt seperti uang pembangunan?  ;administrasi.ukt;peraturan
+bagaimana syarat dan prosedur mendapatkan ijazah kelulusan?;ambil ijazah;peraturan
+Apakah saya bisa mengambil 24 SKS di semester depan?;beban studi;peraturan
+apa ada gelar untuk mahasiswa berprestasi?;gelar;peraturan
+berapa nilai akhir agar mendapatkan cumlaude?;IPK;peraturan
+absen tidak masuk kelas apakah di izinkan?;izin kuliah;peraturan
+Berapa minimal kehadiran untuk mengikuti ujian?;kehadiran;peraturan
+apa saja ketentuan yang harus dipenuhi untuk bisa wisuda?;kelulusan;peraturan
+Apakah KRS itu?;KRS;peraturan
+apa saja penyebab tidak bisa input krs?;KRS;peraturan
+berapa lama batas studi saya di jurusan ini?;masa studi;peraturan
+Apabila setelah menghabiskan maksimal batas studi tetapi belum bisa menyelesaikan Skripsi apakah bisa menambah perpanjangan studi?;masa studi;peraturan
+apakah nilai terbaik yang digunakan untuk nilai MK ngulang?;nilai matkul ulang;peraturan
+Apabila setelah menghabiskan maksimal batas studi tetapi belum bisa menyelesaikan Skripsi apakah bisa menambah perpanjangan studi?;masa studi;peraturan
+apakah nilai terbaik yang digunakan untuk nilai MK ngulang?;nilai matkul ulang;peraturan
