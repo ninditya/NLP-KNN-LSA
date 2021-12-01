@@ -1,1 +1,3 @@
-# Natural-Language-Processing-Using-KNN
+# Natural-Language-Processing-Using-KNN-LSA
+Latent Semantic Analysis For Question Classification With K-Nearest Neighbor
+Research will be conducted to classify student questions into question intent based on the topic of information in the Department of Informatics UPN "Veteran" Yogyakarta. This study uses data obtained by collecting student question data using a form, where the data is labeled according to the topic. Then the data will be text preprocessing, feature extraction with Term Frequency-Inverse Document Frequency (TF-IDF), LSA feature selection, then the training and testing process using the KNN algorithm. The tests were carried out using 1410 data with a comparison of 90% training data and 10% test data with K-Fold Cross Validation.
